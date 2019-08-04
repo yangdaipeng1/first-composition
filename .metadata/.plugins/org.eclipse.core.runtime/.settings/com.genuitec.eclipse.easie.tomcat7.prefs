@@ -1,0 +1,9 @@
+#Sun Aug 04 18:59:55 CST 2019
+SERVER_ENABLEMENT=true
+LIBRARY_PATH="D\:\\developer_tools\\java\\jdk1.7\\bin;D\:\\developer_tools\\apache-tomcat-7.0.94\\bin"
+eclipse.preferences.version=1
+JDK_HOME=D\:\\developer_tools\\java\\jdk1.7
+TOMCAT_BASE=D\:\\developer_tools\\apache-tomcat-7.0.94
+ENDORSED_DIRS="D\:\\developer_tools\\apache-tomcat-7.0.94/common/endorsed"
+TOMCAT_HOME=D\:\\developer_tools\\apache-tomcat-7.0.94
+TOMCAT_TEMP=D\:\\developer_tools\\apache-tomcat-7.0.94\\temp

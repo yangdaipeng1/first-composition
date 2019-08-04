@@ -1,0 +1,14 @@
+#Sun Aug 04 18:41:16 CST 2019
+tomcat7Server.scm32.deploymentPath=D\:\\developer_tools\\apache-tomcat-7.0.94\\webapps\\scm32
+tomcat7Server.scm32.shouldOverwrite=false
+tomcat7Server.scm32.isExploded=true
+tomcat7Server.scm32.shouldBackup=false
+tomcat7Server.scm32.isUptoDate=true
+tomcat7Server.scm32.IEARProjectName=
+tomcat7Server.scm32.deployIsOverProject=false
+tomcat7Server.scm32.isDeployed=true
+tomcat7Server.scm32.noFileCopy=false
+tomcat7Server.scm32.type=WebDeployment
+eclipse.preferences.version=1
+tomcat7Server.scm32.altContextRoot=
+tomcat7Server.scm32.contextRoot=/scm32
