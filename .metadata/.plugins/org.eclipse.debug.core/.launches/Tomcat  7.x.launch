@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.genuitec.eclipse.wdt.jsp.debug.localServer">
-<booleanAttribute key="IS_LAUNCH_CONFIG_SERVER_TYPE" value="true"/>
+<booleanAttribute key="IS_LAUNCH_CONFIG_SERVER_TYPE" value="false"/>
 <stringAttribute key="LAUNCH_IS_TEMPORARY" value="false"/>
 <stringAttribute key="SERVER_BUNDLE_NAME_ATTR" value="com.genuitec.eclipse.easie.tomcat7"/>
 <stringAttribute key="SERVER_CLASS_NAME_ATTR" value="com.genuitec.eclipse.easie.tomcat7.Tomcat7"/>

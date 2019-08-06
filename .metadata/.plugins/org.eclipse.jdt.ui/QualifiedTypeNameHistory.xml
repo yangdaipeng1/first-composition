@@ -5,4 +5,18 @@
 <fullyQualifiedTypeName name="cn.itcast.scm.dao.SupplierMapper"/>
 <fullyQualifiedTypeName name="cn.itcast.scm.entity.Supplier"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="cn.itcast.scm.dao.BaseMapper"/>
+<fullyQualifiedTypeName name="cn.itcast.scm.service.BaseService"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="javax.annotation.Resource"/>
+<fullyQualifiedTypeName name="cn.itcast.scm.action.BaseAction"/>
+<fullyQualifiedTypeName name="cn.itcast.scm.dao.AccountMapper"/>
+<fullyQualifiedTypeName name="cn.itcast.scm.service.AccountService"/>
+<fullyQualifiedTypeName name="cn.itcast.scm.entity.Account"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 </qualifiedTypeNameHistroy>

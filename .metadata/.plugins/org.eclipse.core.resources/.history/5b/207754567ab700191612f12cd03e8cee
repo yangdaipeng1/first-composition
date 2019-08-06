@@ -1,0 +1,36 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@include file="common/common.jspf" %>
+<html>
+<head> 
+    <title> </title>
+
+
+
+
+
+
+</head> 
+
+
+<body>
+<div id="myLogin">
+	<form action="">
+		<input type="text" name="accLogin">
+		<input type="text" name="accPass">
+	</form>
+</div>
+<script type="text/javascript">
+	$('#myLogin').dialog({    
+	    title: '登录界面',    
+	    width: 400,    
+	    height: 200,    
+	    closed: false,    
+	    cache: false,    
+	    modal: true   
+	}); 
+</script>
+
+</body> 
+
+</html>

@@ -9,7 +9,7 @@
     <result column="sup_address" property="supAddress" jdbcType="VARCHAR" />
     <result column="sup_remark" property="supRemark" jdbcType="VARCHAR" />
   </resultMap>
-  <insert id="insertSupplier" parameterType="supplier" >
+  <insert id="insert" parameterType="supplier" >
   	insert into supplier (sup_name) values(#{supName})
   </insert>
   

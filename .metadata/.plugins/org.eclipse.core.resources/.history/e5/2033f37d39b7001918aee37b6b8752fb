@@ -1,0 +1,5 @@
+package cn.itcast.scm.action;
+
+public class BaseAction {
+
+}

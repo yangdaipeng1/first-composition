@@ -15,10 +15,30 @@ public class SupplierServiceImpl implements SupplierService {
 	@Autowired
 	private SupplierMapper supplierMapper;
 
-	public int intsertSupplier(Supplier supplier) throws Exception {
+	
+	public int insert(Supplier entity) throws Exception {
 		// TODO Auto-generated method stub
-		return supplierMapper.insertSupplier(supplier);
+		return supplierMapper.insert(entity);
 	}
+
+	
+	public int update(Supplier entity) throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int delete(Supplier entity) throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public Supplier select(Supplier entity) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	
 
 	
 
