@@ -13,14 +13,20 @@
 <script type="text/javascript">
 	$(function() {
 		$('#dg').datagrid({
-			url : '${proPath }/datagrid_data1.json',
+			//url:'${proPath}/supplier/selectPage.action',//通过关键字查询
+			//支持多条件查询
+			url:'${proPath}/supplier/selectPageUseDyc.action',
 			fitColumns:true,
 			nowrap:true,
 			//idField:
 			pagination:true,
 			rownumbers:true,
 			pageSize:5,
-			pageList:[3,5,10,20],
+			pageList:[2,5,10,20],
+			queryParams: {
+				supName:'%%',
+				supAddress:'%%'
+			},
 			
 			toolbar: [{
 				iconCls: 'icon-add',
@@ -41,36 +47,56 @@
 					alert('删除按钮');
 				}
 			},'-',{
-				text:"<input type='text' id='ss' name='keyWord'/>",
+				text:"名称：<input type='text' id='supName' name='supName'/>",
+				
+			},'-',{
+				text:"地址：<input type='text' id='supAddress' name='supAddress'/>",
 				
 			}],
 
 			columns : [ [ {
 				checkbox:true,
 			},{
-				field : 'productid',
-				title : '产品编号',
+				field : 'supId',
+				title : '供应商编号',
 				width : 100
 			}, {
-				field : 'productname',
-				title : '产品名称',
+				field : 'supName',
+				title : '供应商名称',
 				width : 100
 			}, {
-				field : 'listprice',
-				title : '价格',
+				field : 'supAddress',
+				title : '地址',
 				width : 100,
 				align : 'right'
 			} ] ]
 		});
-		$('#ss').searchbox({ 
+		$('#supAddress').searchbox({ 
 			searcher:function(value,name){ 
-				alert(value + "," + name) 
+				alert("supAddress:"+value);
+				alert("supName:"+$('#supName').val());
+				$('#dg').datagrid('load',{
+					supName: '%'+$('#supName').val()+'%',
+					supAddress: '%'+value+'%'
+					
+				});
 			}, 
 			prompt:'请输入供应商名称' 
-			}); 
+			});
+		/*$('#ss').searchbox({ 
+			searcher:function(value,name){ 
+				alert(value + "," + name);
+				$('#dg').datagrid('load',{
+					keyWord: '%'+value+'%'
+					
+				});
+			}, 
+			prompt:'请输入供应商名称' 
+			});
+		*/
 
 
-	})
+	});
 </script>
 
 
@@ -80,6 +106,7 @@
 
 
 <body>
+
 	<table id="dg"></table>
 </body>
 

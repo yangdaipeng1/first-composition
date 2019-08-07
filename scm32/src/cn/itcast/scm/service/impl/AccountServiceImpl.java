@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import cn.itcast.scm.dao.AccountMapper;
 import cn.itcast.scm.dao.SupplierMapper;
 import cn.itcast.scm.entity.Account;
+import cn.itcast.scm.entity.Page;
 import cn.itcast.scm.entity.Supplier;
 import cn.itcast.scm.service.AccountService;
 import cn.itcast.scm.service.SupplierService;
@@ -49,6 +50,20 @@ public class AccountServiceImpl implements AccountService {
 
 
 	public Account select(Account entity) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	public Page<Account> selectPage(Page<Account> page) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	public Page<Account> selectPageUseDyc(Page<Account> page) {
 		// TODO Auto-generated method stub
 		return null;
 	}

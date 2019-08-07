@@ -1,0 +1,5 @@
+package cn.itcast.scm.entity;
+
+public class Page {
+
+}

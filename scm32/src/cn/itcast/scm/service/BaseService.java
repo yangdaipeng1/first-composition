@@ -1,5 +1,7 @@
 package cn.itcast.scm.service;
 
+import cn.itcast.scm.entity.Page;
+
 public interface BaseService<T> {
 
 		//添加单个对象
@@ -13,4 +15,10 @@ public interface BaseService<T> {
 		
 		//查询单个对象
 		public T select(T entity)throws Exception;
+		
+		//通过关键字分页查询
+		public Page<T> selectPage(Page<T> page);
+		
+		//通过多条件分页查询
+		public Page<T> selectPageUseDyc(Page<T> page);
 }

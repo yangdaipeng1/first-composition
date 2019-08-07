@@ -50,3 +50,6 @@ insert into supplier (sup_name,sup_linkman,sup_phone,sup_address,sup_remark) val
 
 select * from account;
 select * from supplier;
+
+select * from supplier where sup_name like '%供应商%' limit 0,2;
+select count(1) from supplier where sup_name like '%供应商%';

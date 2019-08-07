@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import cn.itcast.scm.dao.SupplierMapper;
+import cn.itcast.scm.entity.Page;
 import cn.itcast.scm.entity.Supplier;
 import cn.itcast.scm.service.SupplierService;
 
@@ -35,6 +36,22 @@ public class SupplierServiceImpl implements SupplierService {
 	public Supplier select(Supplier entity) throws Exception {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+
+	public Page<Supplier> selectPage(Page<Supplier> page) {
+		// TODO Auto-generated method stub
+		page.setList(supplierMapper.selectPageList(page));
+		page.setTotalRecord(supplierMapper.selectPageCount(page));
+		return page;
+	}
+
+
+	public Page<Supplier> selectPageUseDyc(Page<Supplier> page) {
+		// TODO Auto-generated method stub
+		page.setList(supplierMapper.selectPageListUseDyc(page));
+		page.setTotalRecord(supplierMapper.selectPageCountUseDyc(page));
+		return page;
 	}
 
 

@@ -1,0 +1,7 @@
+package cn.itcast.scm.entity;
+
+import java.io.Serializable;
+
+public class Page implements Serializable{
+
+}

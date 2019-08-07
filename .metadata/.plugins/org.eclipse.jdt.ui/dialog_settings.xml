@@ -31,4 +31,8 @@
 		<item value="true" key="IgnoreDefault"/>
 		<item value="false" key="FinalModifier"/>
 	</section>
+	<section name="AddGetterSetterDialog">
+		<item value="false" key="RemoveFinal"/>
+		<item value="false" key="SortOrdering"/>
+	</section>
 </section>
