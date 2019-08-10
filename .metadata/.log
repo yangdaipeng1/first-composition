@@ -2358,3 +2358,675 @@ org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
 
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2019-08-07 18:45:57.303
 !MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!SESSION 2019-08-09 18:50:33.464 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.osgi 2 0 2019-08-09 18:50:56.364
+!MESSAGE While loading class "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16", thread "Thread[Worker-4,5,main]" timed out waiting (5001ms) for thread "Thread[Worker-1,5,main]" to finish starting bundle "org.eclipse.wst.jsdt.core_1.1.100.me201109222040 [960]". To avoid deadlock, thread "Thread[Worker-4,5,main]" is proceeding but "org.eclipse.wst.jsdt.internal.core.JavaModelManager$16" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/C:/Users/yang/AppData/Local/MyEclipse/Common/plugins/org.eclipse.wst.jsdt.core_1.1.100.me201109222040.jar" by thread "Worker-1".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:462)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 16 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:462)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.wst.jsdt.internal.core.JavaModelManager$15.run(JavaModelManager.java:4182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-08-09 18:51:04.343
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-09 19:17:45.515
+!MESSAGE Error processing query: /* 添加供应商数据, */ 
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (1,'苹果供应商','小张','12388888887','广州花都','普通供应商',0,1)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-09 19:17:45.515
+!MESSAGE Error processing query:  
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (2,'三星供应商','小王','12388888888','广州增城','普通供应商',0,1)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-09 19:17:45.515
+!MESSAGE Error processing query:  
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (3,'华为供应商','小王','12388888889','广东深圳','一级供应商',0,2)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-09 19:18:01.814
+!MESSAGE Error processing query: /* 添加供应商数据, */ 
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (1,'苹果供应商','小张','12388888887','广州花都','普通供应商',0,1)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'mybatis.supplier' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-09 19:18:01.814
+!MESSAGE Error processing query:  
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (2,'三星供应商','小王','12388888888','广州增城','普通供应商',0,1)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'mybatis.supplier' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-09 19:18:01.814
+!MESSAGE Error processing query:  
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (3,'华为供应商','小王','12388888889','广东深圳','一级供应商',0,2)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'mybatis.supplier' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-09 19:18:01.814
+!MESSAGE Error processing query:  
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (4,'TCL供应商','小王','12388888666','广州增城','普通供应商',0,1)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'mybatis.supplier' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-09 19:18:01.824
+!MESSAGE Error processing query:  
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (5,'Nokia供应商','小王','12388888777','广东深圳','一级供应商',0,2)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'mybatis.supplier' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-09 19:18:07.844
+!MESSAGE Error processing query: /* 添加供应商数据, */ 
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (1,'苹果供应商','小张','12388888887','广州花都','普通供应商',0,1)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-09 19:18:07.844
+!MESSAGE Error processing query:  
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (2,'三星供应商','小王','12388888888','广州增城','普通供应商',0,1)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-09 19:18:07.844
+!MESSAGE Error processing query:  
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (3,'华为供应商','小王','12388888889','广东深圳','一级供应商',0,2)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-09 19:18:07.844
+!MESSAGE Error processing query:  
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (4,'TCL供应商','小王','12388888666','广州增城','普通供应商',0,1)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '4' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-09 19:18:07.854
+!MESSAGE Error processing query:  
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (5,'Nokia供应商','小王','12388888777','广东深圳','一级供应商',0,2)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '5' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SESSION 2019-08-10 15:47:48.793 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-08-10 15:48:13.432
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:33:23.167
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:33:32.673
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:34:20.163
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:34:25.643
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:46:45.637
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:46:48.597
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:46:58.277
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:47:30.057
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:47:33.947
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:47:43.387
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:47:46.237
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:47:55.437
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:47:58.557
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:48:14.027
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:48:18.207
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:48:25.557
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:48:35.787
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:48:47.777
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:48:50.827
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:49:19.176
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:49:24.766
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:49:28.096
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:50:26.984
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:50:31.924
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:50:35.534
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY org.eclipse.debug.ui 4 0 2019-08-10 20:50:53.534
+!MESSAGE Problem detected with part org.eclipse.debug.ui.NoSourceFoundEditor (class = org.eclipse.debug.internal.ui.views.launch.SourceNotFoundEditor): Editor is not firing a PROP_INPUT event in response to IReusableEditor.setInput(...)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-10 21:11:59.803
+!MESSAGE Error processing query: create table account 
+( 
+   /* 管理员编号,自动增长 */ 
+   acc_id                  int not null auto_increment, 
+   /* 管理员登录名  */ 
+   acc_login               varchar(20), 
+   /* 管理员姓名  */ 
+   acc_name                varchar(20), 
+   /* 管理员密码 */ 
+   acc_pass                varchar(20), 
+   /* 设置编号为主键 */ 
+   primary key (acc_id) 
+)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'account' already exists
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-10 21:12:00.343
+!MESSAGE Error processing query:  
+ 
+/*==============================================================*/ 
+/* Table: supplier                                              */   
+/*==============================================================*/ 
+/*                    
+sup_id               编号, 
+   sup_name             供应商名称, 
+   sup_linkman          联系人, 
+   sup_phone            电话, 
+   sup_address          地址, 
+   sup_remark           备注, 
+   sup_pay              期初应付, 
+   sup_type             类型, 
+*/  
+/*==============================================================*/ 
+/*==============================================================*/ 
+create table supplier 
+( 
+   sup_id               int not null, 
+   sup_name             varchar(20), 
+   sup_linkman          varchar(20), 
+   sup_phone            varchar(11), 
+   sup_address          varchar(100), 
+   sup_remark           varchar(100), 
+   sup_pay              decimal(12,2), 
+   sup_type             varchar(10), 
+   primary key (sup_id) 
+)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'supplier' already exists
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-10 21:12:00.403
+!MESSAGE Error processing query:  
+/* 添加供应商数据, */ 
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (1,'苹果供应商','小张','12388888887','广州花都','普通供应商',0,1)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-10 21:12:00.413
+!MESSAGE Error processing query:  
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (2,'三星供应商','小王','12388888888','广州增城','普通供应商',0,1)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-10 21:12:00.413
+!MESSAGE Error processing query:  
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (3,'华为供应商','小王','12388888889','广东深圳','一级供应商',0,2)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-10 21:12:00.413
+!MESSAGE Error processing query:  
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (4,'TCL供应商','小王','12388888666','广州增城','普通供应商',0,1)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '4' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.genuitec.eclipse.sqlexplorer 4 4 2019-08-10 21:12:00.413
+!MESSAGE Error processing query:  
+insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (5,'Nokia供应商','小王','12388888777','广东深圳','一级供应商',0,2)
+!STACK 0
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '5' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2536)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:734)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.processQuery(SqlExecProgress.java:232)
+	at com.genuitec.eclipse.sqlexplorer.views.SqlExecProgress.run(SqlExecProgress.java:183)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2019-08-10 21:47:36.479
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for accessibility [in accessibility.class [in com.sun.accessibility.internal.resources [in D:\developer_tools\java\jdk1.7\jre\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:77)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:997)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:58)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:555)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2019-08-10 21:47:36.479
+!MESSAGE Unknown javadoc format for accessibility [in accessibility.class [in com.sun.accessibility.internal.resources [in D:\developer_tools\java\jdk1.7\jre\lib\rt.jar]]]

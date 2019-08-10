@@ -22,15 +22,31 @@ public class SupplierAction extends BaseAction{
 	private SupplierService supplierService;
 	
 	@RequestMapping(value="/insert")
-	public String insert(Supplier supplier){
+	@ResponseBody
+	public Object insert(Supplier supplier){
 		System.out.println("---action.supplier:"+supplier);
+		int i= 0;
 		try {
-			supplierService.insert(supplier);
+			i=supplierService.insert(supplier);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return "forward:/jsp/main.jsp";
+		return i;
+	}
+	//根据主键修改供应商的信息
+	@RequestMapping(value="/update")
+	@ResponseBody //如果返回json格式，需要这个注解，这里用来测试环境
+	public Object update(Supplier supplier){
+		System.out.println("---action.update.supplier:"+supplier);
+		int i = 0;
+		try {
+			i = supplierService.update(supplier);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return i;
 	}
 	
 		//通过关键字分页查询
@@ -51,6 +67,20 @@ public class SupplierAction extends BaseAction{
 			Page p = supplierService.selectPageUseDyc(page);
 			
 			return p.getPageMap();
+		}
+		
+		@RequestMapping("/deleteList")
+		@ResponseBody //如果返回json格式，需要这个注解，这里用来测试环境
+		public Object deleteList(String[] pks){
+			System.out.println("---doAjax.deleteList:"+pks);
+			int i = 0;
+			try {
+				i = supplierService.deleteList(pks);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return i;
 		}
 /*	//通过关键字分页查询
 		@RequestMapping("/selectPage")

@@ -13,6 +13,9 @@ public interface BaseService<T> {
 		//删除单个对象
 		public int delete(T entity)throws Exception;
 		
+		//通过主键（数组）批量删除数据
+		public int deleteList(String [] pks)throws Exception;
+		
 		//查询单个对象
 		public T select(T entity)throws Exception;
 		

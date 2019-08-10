@@ -35,9 +35,9 @@
 <coolItem id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" itemType="typePlaceholder" x="38" y="22"/>
 <coolItem id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" itemType="typePlaceholder" x="38" y="22"/>
 <coolItem id="com.genuitec.eclipse.springframework.springconfigeditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="com.genuitec.eclipse.sqlexplorer.editors.SQLEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.genuitec.eclipse.sqlexplorer.editors.SQLEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -54,47 +54,33 @@
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Supplier.java" partName="Supplier.java" path="D:/workspace_eclipse/scm/scm32/src/cn/itcast/scm/entity/Supplier.java" title="Supplier.java" tooltip="scm32/src/cn/itcast/scm/entity/Supplier.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/scm32/src/cn/itcast/scm/entity/Supplier.java"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AccountService.java" partName="AccountService.java" path="D:/workspace_eclipse/scm/scm32/src/cn/itcast/scm/service/AccountService.java" title="AccountService.java" tooltip="scm32/src/cn/itcast/scm/service/AccountService.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/scm32/src/cn/itcast/scm/service/AccountService.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="supplierlist.jsp" partName="supplierlist.jsp" path="D:/workspace_eclipse/scm/scm32/WebRoot/WEB-INF/supplier/supplierlist.jsp" title="supplierlist.jsp" tooltip="scm32/WebRoot/WEB-INF/supplier/supplierlist.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/scm32/WebRoot/WEB-INF/supplier/supplierlist.jsp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="661" selectionTopPixel="286"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AccountServiceImpl.java" partName="AccountServiceImpl.java" path="D:/workspace_eclipse/scm/scm32/src/cn/itcast/scm/service/impl/AccountServiceImpl.java" title="AccountServiceImpl.java" tooltip="scm32/src/cn/itcast/scm/service/impl/AccountServiceImpl.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/scm32/src/cn/itcast/scm/service/impl/AccountServiceImpl.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="641" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="SupplierMapper.xml" partName="SupplierMapper.xml" path="D:/workspace_eclipse/scm/scm32/src/cn/itcast/scm/dao/SupplierMapper.xml" title="SupplierMapper.xml" tooltip="scm32/src/cn/itcast/scm/dao/SupplierMapper.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/scm32/src/cn/itcast/scm/dao/SupplierMapper.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SupplierServiceImpl.java" partName="SupplierServiceImpl.java" path="D:/workspace_eclipse/scm/scm32/src/cn/itcast/scm/service/impl/SupplierServiceImpl.java" title="SupplierServiceImpl.java" tooltip="scm32/src/cn/itcast/scm/service/impl/SupplierServiceImpl.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/scm32/src/cn/itcast/scm/service/impl/SupplierServiceImpl.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="524" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="main.jsp" partName="main.jsp" path="D:/workspace_eclipse/scm/scm32/WebRoot/WEB-INF/main/main.jsp" title="main.jsp" tooltip="scm32/WebRoot/WEB-INF/main/main.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/scm32/WebRoot/WEB-INF/main/main.jsp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1006"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AccountAction.java" partName="AccountAction.java" path="D:/workspace_eclipse/scm/scm32/src/cn/itcast/scm/action/AccountAction.java" title="AccountAction.java" tooltip="scm32/src/cn/itcast/scm/action/AccountAction.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/scm32/src/cn/itcast/scm/action/AccountAction.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SupplierAction.java" partName="SupplierAction.java" path="D:/workspace_eclipse/scm/scm32/src/cn/itcast/scm/action/SupplierAction.java" title="SupplierAction.java" tooltip="scm32/src/cn/itcast/scm/action/SupplierAction.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/scm32/src/cn/itcast/scm/action/SupplierAction.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1411" selectionTopPixel="550"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BaseServiceImpl.java" partName="BaseServiceImpl.java" path="D:/workspace_eclipse/scm/scm32/src/cn/itcast/scm/service/impl/BaseServiceImpl.java" title="BaseServiceImpl.java" tooltip="scm32/src/cn/itcast/scm/service/impl/BaseServiceImpl.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/scm32/src/cn/itcast/scm/service/impl/BaseServiceImpl.java"/>
+<editorState selectionHorizontalPixel="259" selectionLength="0" selectionOffset="0" selectionTopPixel="462"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BaseService.java" partName="BaseService.java" path="D:/workspace_eclipse/scm/scm32/src/cn/itcast/scm/service/BaseService.java" title="BaseService.java" tooltip="scm32/src/cn/itcast/scm/service/BaseService.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/scm32/src/cn/itcast/scm/service/BaseService.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="16" selectionOffset="457" selectionTopPixel="205"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Page.java" partName="Page.java" path="D:/workspace_eclipse/scm/scm32/src/cn/itcast/scm/entity/Page.java" title="Page.java" tooltip="scm32/src/cn/itcast/scm/entity/Page.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/scm32/src/cn/itcast/scm/entity/Page.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="548" selectionTopPixel="330"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BaseMapper.java" partName="BaseMapper.java" path="D:/workspace_eclipse/scm/scm32/src/cn/itcast/scm/dao/BaseMapper.java" title="BaseMapper.java" tooltip="scm32/src/cn/itcast/scm/dao/BaseMapper.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/scm32/src/cn/itcast/scm/dao/BaseMapper.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="515" selectionTopPixel="187"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SupplierService.java" partName="SupplierService.java" path="D:/workspace_eclipse/scm/scm32/src/cn/itcast/scm/service/SupplierService.java" title="SupplierService.java" tooltip="scm32/src/cn/itcast/scm/service/SupplierService.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/scm32/src/cn/itcast/scm/service/SupplierService.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -145,9 +131,9 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (100 of 396 items)"/>
 <category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings (100 of 400 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -239,6 +225,7 @@
 <alwaysOnActionSet id="com.genuitec.eclipse.uml2.ui.actions"/>
 <alwaysOnActionSet id="org.eclipse.debug.ui.profileActionSet"/>
 <alwaysOnActionSet id="com.genuitec.eclipse.web20.actionset"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
 <show_view_action id="com.genuitec.eclipse.ast.deploy.core.serverview"/>
 <show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
 <show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
@@ -301,6 +288,7 @@
 <view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -326,14 +314,16 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@79662429" ratio="0.54953563" ratioLeft="355" ratioRight="291" relationship="4" relative="org.eclipse.ui.internal.ViewStack@5c672bb3">
-<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottom" ratio="0.60537636" ratioLeft="563" ratioRight="367" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.68172044" ratioLeft="634" ratioRight="296" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -466,24 +456,33 @@
 <view id="org.eclipse.debug.ui.ExpressionView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="com.genuitec.eclipse.ast.deploy.core.serverview" label="Servers"/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="com.genuitec.eclipse.ast.deploy.core.serverview" label="Servers"/>
 <page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.dltk.ui.ScriptExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.wst.server.ui.ServersView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7491961" ratioLeft="699" ratioRight="234" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.8967742" ratioLeft="834" ratioRight="96" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="com.genuitec.javascript.debug.ui.scriptView" label="JavaScript Scripts Inspector"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
@@ -494,27 +493,34 @@
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
 <page content="org.eclipse.wst.xsl.jaxp.debug.ui.view1" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.44921315" ratioLeft="314" ratioRight="385" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info part="org.eclipse.ui.editorss" ratio="0.566787" ratioLeft="471" ratioRight="360" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
 <page content="org.eclipse.atf.mozilla.ide.ui.views.inspector" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.ExpressionView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <page content="org.eclipse.atf.mozilla.ide.debug.ui.scriptview" label="LabelNotFound"/>
 <page content="org.eclipse.dltk.debug.ui.ScriptDisplayView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -526,160 +532,168 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/entity/Page.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/service/BaseService.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/action/SupplierAction.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/service/impl/BaseServiceImpl.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/service/impl/AccountServiceImpl.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/service/impl/SupplierServiceImpl.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/scm32/WebRoot/WEB-INF/supplier/supplierlist.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/entity/Supplier.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/scm32/WebRoot/WEB-INF/supplier/supplierlist.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/scm32/src/cn/itcast/scm/dao/SupplierMapper.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/scm32/WebRoot/WEB-INF/main/main.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/action/AccountAction.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/action/SupplierAction.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/service/SupplierService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/service/AccountService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/service/AccountService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/service/impl/AccountServiceImpl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/service/impl/SupplierServiceImpl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/service/impl/BaseServiceImpl.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/service/BaseService.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/entity/Page.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/dao/SupplierMapper.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/dao/BaseMapper.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/scm32/src/cn/itcast/scm/service/SupplierService.java"/>
 </editors>
-<item historyLabel="supplierlist.jsp" index="5">
-<position info="not_deleted" x="464" y="0"/>
-</item>
-<item historyLabel="SupplierAction.java" index="2">
-<position info="not_deleted" x="1528" y="0"/>
-</item>
-<item historyLabel="Page.java" index="0">
-<position info="not_deleted" x="413" y="11"/>
-</item>
-<item historyLabel="Supplier.java" index="6">
+<item historyLabel="AccountServiceImpl.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="AccountServiceImpl.java" index="3">
-<position info="not_deleted" x="521" y="0"/>
+<item historyLabel="BaseServiceImpl.java" index="1">
+<position info="not_deleted" x="2983" y="0"/>
 </item>
-<item historyLabel="Supplier.java" index="6">
+<item historyLabel="AccountServiceImpl.java" index="2">
+<position info="not_deleted" x="843" y="0"/>
+</item>
+<item historyLabel="BaseServiceImpl.java" index="1">
+<position info="not_deleted" x="2983" y="0"/>
+</item>
+<item historyLabel="AccountServiceImpl.java" index="2">
+<position info="not_deleted" x="843" y="0"/>
+</item>
+<item historyLabel="SupplierServiceImpl.java" index="3">
+<position info="not_deleted" x="466" y="0"/>
+</item>
+<item historyLabel="BaseServiceImpl.java" index="1">
+<position info="not_deleted" x="2983" y="0"/>
+</item>
+<item historyLabel="AccountServiceImpl.java" index="2">
+<position info="not_deleted" x="843" y="0"/>
+</item>
+<item historyLabel="AccountServiceImpl.java" index="2">
+<position info="not_deleted" x="709" y="0"/>
+</item>
+<item historyLabel="SupplierServiceImpl.java" index="3">
+<position info="not_deleted" x="492" y="0"/>
+</item>
+<item historyLabel="BaseService.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SupplierServiceImpl.java" index="4">
-<position info="not_deleted" x="1396" y="0"/>
-</item>
-<item historyLabel="BaseService.java" index="1">
-<position info="not_deleted" x="434" y="0"/>
-</item>
-<item historyLabel="Supplier.java" index="6">
+<item historyLabel="SupplierService.java" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="supplierlist.jsp" index="7">
-<position info="not_deleted" x="642" y="0"/>
-</item>
-<item historyLabel="SupplierMapper.xml" index="8"/>
-<item historyLabel="supplierlist.jsp" index="7">
-<position info="not_deleted" x="1710" y="0"/>
-</item>
-<item historyLabel="main.jsp" index="9">
+<item historyLabel="BaseService.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SupplierMapper.xml" index="8"/>
-<item historyLabel="supplierlist.jsp" index="7">
-<position info="not_deleted" x="1710" y="0"/>
+<item historyLabel="BaseServiceImpl.java" index="1">
+<position info="not_deleted" x="2983" y="0"/>
 </item>
-<item historyLabel="main.jsp" index="9">
+<item historyLabel="SupplierServiceImpl.java" index="3">
+<position info="not_deleted" x="492" y="0"/>
+</item>
+<item historyLabel="BaseServiceImpl.java" index="1">
+<position info="not_deleted" x="2983" y="0"/>
+</item>
+<item historyLabel="SupplierServiceImpl.java" index="3">
+<position info="not_deleted" x="492" y="0"/>
+</item>
+<item historyLabel="BaseServiceImpl.java" index="1">
+<position info="not_deleted" x="2983" y="0"/>
+</item>
+<item historyLabel="SupplierServiceImpl.java" index="3">
+<position info="not_deleted" x="492" y="0"/>
+</item>
+<item historyLabel="BaseService.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="supplierlist.jsp" index="7">
-<position info="not_deleted" x="665" y="0"/>
+<item historyLabel="BaseServiceImpl.java" index="1">
+<position info="not_deleted" x="2983" y="0"/>
 </item>
-<item historyLabel="Supplier.java" index="6">
+<item historyLabel="SupplierServiceImpl.java" index="3">
+<position info="not_deleted" x="492" y="0"/>
+</item>
+<item historyLabel="SupplierServiceImpl.java" index="3">
+<position info="not_deleted" x="525" y="0"/>
+</item>
+<item historyLabel="AccountServiceImpl.java" index="2">
+<position info="not_deleted" x="711" y="0"/>
+</item>
+<item historyLabel="BaseService.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="supplierlist.jsp" index="7">
-<position info="not_deleted" x="665" y="0"/>
+<item historyLabel="SupplierServiceImpl.java" index="3">
+<position info="not_deleted" x="672" y="0"/>
 </item>
-<item historyLabel="AccountAction.java" index="10">
+<item historyLabel="AccountService.java" index="5">
+<position info="not_deleted" x="220" y="0"/>
+</item>
+<item historyLabel="SupplierService.java" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SupplierAction.java" index="11">
-<position info="not_deleted" x="1456" y="51"/>
+<item historyLabel="AccountService.java" index="5">
+<position info="not_deleted" x="220" y="0"/>
 </item>
-<item historyLabel="supplierlist.jsp" index="7">
-<position info="not_deleted" x="665" y="0"/>
-</item>
-<item historyLabel="SupplierAction.java" index="11">
-<position info="not_deleted" x="1493" y="0"/>
-</item>
-<item historyLabel="BaseService.java" index="12">
-<position info="not_deleted" x="457" y="16"/>
-</item>
-<item historyLabel="SupplierMapper.xml" index="8"/>
-<item historyLabel="supplierlist.jsp" index="7">
-<position info="not_deleted" x="1617" y="0"/>
-</item>
-<item historyLabel="SupplierAction.java" index="11">
-<position info="not_deleted" x="1493" y="0"/>
-</item>
-<item historyLabel="SupplierAction.java" index="11">
-<position info="not_deleted" x="1412" y="0"/>
-</item>
-<item historyLabel="supplierlist.jsp" index="7">
-<position info="not_deleted" x="661" y="0"/>
-</item>
-<item historyLabel="Page.java" index="13">
+<item historyLabel="BaseService.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Page.java" index="13">
-<position info="not_deleted" x="514" y="0"/>
-</item>
-<item historyLabel="Page.java" index="13">
-<position info="not_deleted" x="1296" y="0"/>
-</item>
-<item historyLabel="Page.java" index="13">
-<position info="not_deleted" x="1456" y="1"/>
-</item>
-<item historyLabel="Page.java" index="13">
-<position info="not_deleted" x="1422" y="0"/>
-</item>
-<item historyLabel="SupplierAction.java" index="11">
-<position info="not_deleted" x="1412" y="0"/>
-</item>
-<item historyLabel="Page.java" index="13">
-<position info="not_deleted" x="1422" y="0"/>
-</item>
-<item historyLabel="SupplierAction.java" index="11">
-<position info="not_deleted" x="1538" y="0"/>
-</item>
-<item historyLabel="Page.java" index="13">
-<position info="not_deleted" x="626" y="0"/>
-</item>
-<item historyLabel="SupplierAction.java" index="11">
-<position info="not_deleted" x="1207" y="0"/>
-</item>
-<item historyLabel="Page.java" index="13">
-<position info="not_deleted" x="626" y="0"/>
-</item>
-<item historyLabel="Page.java" index="13">
-<position info="not_deleted" x="554" y="0"/>
-</item>
-<item historyLabel="SupplierAction.java" index="11">
-<position info="not_deleted" x="1411" y="0"/>
-</item>
-<item historyLabel="SupplierMapper.xml" index="8"/>
-<item historyLabel="Page.java" index="13">
-<position info="not_deleted" x="554" y="0"/>
-</item>
-<item historyLabel="SupplierMapper.xml" index="8"/>
-<item historyLabel="SupplierMapper.java" index="14">
+<item historyLabel="SupplierService.java" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BaseMapper.java" index="15">
+<item historyLabel="AccountService.java" index="5">
+<position info="not_deleted" x="220" y="0"/>
+</item>
+<item historyLabel="AccountServiceImpl.java" index="2">
+<position info="not_deleted" x="841" y="0"/>
+</item>
+<item historyLabel="SupplierServiceImpl.java" index="3">
+<position info="not_deleted" x="736" y="0"/>
+</item>
+<item historyLabel="BaseServiceImpl.java" index="1">
+<position info="not_deleted" x="2983" y="0"/>
+</item>
+<item historyLabel="AccountService.java" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SupplierMapper.xml" index="8"/>
-<item historyLabel="BaseMapper.java" index="15">
-<position info="not_deleted" x="515" y="0"/>
+<item historyLabel="AccountServiceImpl.java" index="7">
+<position info="not_deleted" x="641" y="0"/>
 </item>
-<item active="true" historyLabel="Page.java" index="13">
-<position info="not_deleted" x="554" y="0"/>
+<item historyLabel="SupplierServiceImpl.java" index="8">
+<position info="not_deleted" x="524" y="0"/>
+</item>
+<item historyLabel="BaseServiceImpl.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="BaseService.java" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="AccountService.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="BaseService.java" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="BaseServiceImpl.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="BaseService.java" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SupplierService.java" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="BaseService.java" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SupplierServiceImpl.java" index="8">
+<position info="not_deleted" x="524" y="0"/>
+</item>
+<item historyLabel="BaseServiceImpl.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SupplierServiceImpl.java" index="8">
+<position info="not_deleted" x="524" y="0"/>
+</item>
+<item active="true" historyLabel="BaseServiceImpl.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -687,14 +701,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="topleft"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@5c672bb3"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@79662429"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -702,40 +708,18 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottomleft"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BaseMapper.java" tooltip="scm32/src/cn/itcast/scm/dao/BaseMapper.java">
-<persistable path="/scm32/src/cn/itcast/scm/dao/BaseMapper.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SupplierMapper.java" tooltip="scm32/src/cn/itcast/scm/dao/SupplierMapper.java">
-<persistable path="/scm32/src/cn/itcast/scm/dao/SupplierMapper.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Page.java" tooltip="scm32/src/cn/itcast/scm/entity/Page.java">
-<persistable path="/scm32/src/cn/itcast/scm/entity/Page.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SupplierService.java" tooltip="scm32/src/cn/itcast/scm/service/SupplierService.java">
+<persistable path="/scm32/src/cn/itcast/scm/service/SupplierService.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BaseService.java" tooltip="scm32/src/cn/itcast/scm/service/BaseService.java">
 <persistable path="/scm32/src/cn/itcast/scm/service/BaseService.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SupplierAction.java" tooltip="scm32/src/cn/itcast/scm/action/SupplierAction.java">
-<persistable path="/scm32/src/cn/itcast/scm/action/SupplierAction.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AccountAction.java" tooltip="scm32/src/cn/itcast/scm/action/AccountAction.java">
-<persistable path="/scm32/src/cn/itcast/scm/action/AccountAction.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="main.jsp" tooltip="scm32/WebRoot/WEB-INF/main/main.jsp">
-<persistable path="/scm32/WebRoot/WEB-INF/main/main.jsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="SupplierMapper.xml" tooltip="scm32/src/cn/itcast/scm/dao/SupplierMapper.xml">
-<persistable path="/scm32/src/cn/itcast/scm/dao/SupplierMapper.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="supplierlist.jsp" tooltip="scm32/WebRoot/WEB-INF/supplier/supplierlist.jsp">
-<persistable path="/scm32/WebRoot/WEB-INF/supplier/supplierlist.jsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Supplier.java" tooltip="scm32/src/cn/itcast/scm/entity/Supplier.java">
-<persistable path="/scm32/src/cn/itcast/scm/entity/Supplier.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BaseServiceImpl.java" tooltip="scm32/src/cn/itcast/scm/service/impl/BaseServiceImpl.java">
+<persistable path="/scm32/src/cn/itcast/scm/service/impl/BaseServiceImpl.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SupplierServiceImpl.java" tooltip="scm32/src/cn/itcast/scm/service/impl/SupplierServiceImpl.java">
 <persistable path="/scm32/src/cn/itcast/scm/service/impl/SupplierServiceImpl.java"/>
@@ -743,14 +727,35 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AccountServiceImpl.java" tooltip="scm32/src/cn/itcast/scm/service/impl/AccountServiceImpl.java">
 <persistable path="/scm32/src/cn/itcast/scm/service/impl/AccountServiceImpl.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.sqlexplorer.editors.SQLEditor" name="newfile.sql" tooltip="scm32/config/newfile.sql">
-<persistable path="/scm32/config/newfile.sql"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AccountService.java" tooltip="scm32/src/cn/itcast/scm/service/AccountService.java">
 <persistable path="/scm32/src/cn/itcast/scm/service/AccountService.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="generatorConfig.xml" tooltip="scm32/config/generatorConfig.xml">
-<persistable path="/scm32/config/generatorConfig.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BaseMapper.java" tooltip="scm32/src/cn/itcast/scm/dao/BaseMapper.java">
+<persistable path="/scm32/src/cn/itcast/scm/dao/BaseMapper.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="main.jsp" tooltip="scm32/WebRoot/WEB-INF/main/main.jsp">
+<persistable path="/scm32/WebRoot/WEB-INF/main/main.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="insert.jsp" tooltip="scm32/WebRoot/WEB-INF/supplier/insert.jsp">
+<persistable path="/scm32/WebRoot/WEB-INF/supplier/insert.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="update.jsp" tooltip="scm32/WebRoot/WEB-INF/supplier/update.jsp">
+<persistable path="/scm32/WebRoot/WEB-INF/supplier/update.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="supplierlist.jsp" tooltip="scm32/WebRoot/WEB-INF/supplier/supplierlist.jsp">
+<persistable path="/scm32/WebRoot/WEB-INF/supplier/supplierlist.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.sqlexplorer.editors.SQLEditor" name="newfile.sql" tooltip="scm32/config/newfile.sql">
+<persistable path="/scm32/config/newfile.sql"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Supplier.java" tooltip="scm32/src/cn/itcast/scm/entity/Supplier.java">
+<persistable path="/scm32/src/cn/itcast/scm/entity/Supplier.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SupplierAction.java" tooltip="scm32/src/cn/itcast/scm/action/SupplierAction.java">
+<persistable path="/scm32/src/cn/itcast/scm/action/SupplierAction.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Thread.class" tooltip="java.lang.Thread">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=scm32/D:\/developer_tools\/java\/jdk1.7\/jre\/lib\/rt.jar&lt;java.lang(Thread.class"/>
 </file>
 </mruList>
 </workbench>

@@ -1,0 +1,19 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<html>
+<head>
+</head>
+<body>
+	<form action="supplier/insert.action" method="post">
+		供应商名称：<input type="text"	name="supName"><br>
+		供应商类型:<select id="cc" class="easyui-combobox" name="dept" style="width:200px;">   
+				    <option value="aa">aitem1</option>   
+				    <option>bitem2</option>   
+				    <option>bitem3</option>   
+				    <option>ditem4</option>   
+				    <option>eitem5</option>   
+				</select>  
+		 
+		<input type="submit" value="ok">
+	</form>
+</body>
+</html>

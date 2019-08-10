@@ -15,6 +15,9 @@ public interface BaseMapper<T> {
 	//删除单个对象
 	public int delete(T entity);
 	
+	//通过主键（数组）批量删除数据
+	public int deleteList(String [] pks);
+	
 	//查询单个对象
 	public T select(T entity);
 	

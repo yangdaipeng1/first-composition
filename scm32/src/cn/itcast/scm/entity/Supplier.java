@@ -1,6 +1,7 @@
 package cn.itcast.scm.entity;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 public class Supplier implements Serializable{
     /**
@@ -10,70 +11,91 @@ public class Supplier implements Serializable{
 
 	private Integer supId;
 
-    private String supName;
+	private String supName;
 
-    private String supLinkman;
+	private String supLinkman;
 
-    private String supPhone;
+	private String supPhone;
 
-    private String supAddress;
+	private String supAddress;
 
-    private String supRemark;
+	private String supRemark;
+	
+	private BigDecimal supPay;
+	
+	private String supType;
 
-    public Integer getSupId() {
-        return supId;
-    }
+	public BigDecimal getSupPay() {
+		return supPay;
+	}
 
-    public void setSupId(Integer supId) {
-        this.supId = supId;
-    }
+	public void setSupPay(BigDecimal supPay) {
+		this.supPay = supPay;
+	}
 
-    public String getSupName() {
-        return supName;
-    }
+	public String getSupType() {
+		return supType;
+	}
 
-    public void setSupName(String supName) {
-        this.supName = supName;
-    }
+	public void setSupType(String supType) {
+		this.supType = supType;
+	}
 
-    public String getSupLinkman() {
-        return supLinkman;
-    }
+	public Integer getSupId() {
+		return supId;
+	}
 
-    public void setSupLinkman(String supLinkman) {
-        this.supLinkman = supLinkman;
-    }
+	public void setSupId(Integer supId) {
+		this.supId = supId;
+	}
 
-    public String getSupPhone() {
-        return supPhone;
-    }
+	public String getSupName() {
+		return supName;
+	}
 
-    public void setSupPhone(String supPhone) {
-        this.supPhone = supPhone;
-    }
+	public void setSupName(String supName) {
+		this.supName = supName;
+	}
 
-    public String getSupAddress() {
-        return supAddress;
-    }
+	public String getSupLinkman() {
+		return supLinkman;
+	}
 
-    public void setSupAddress(String supAddress) {
-        this.supAddress = supAddress;
-    }
+	public void setSupLinkman(String supLinkman) {
+		this.supLinkman = supLinkman;
+	}
 
-    public String getSupRemark() {
-        return supRemark;
-    }
+	public String getSupPhone() {
+		return supPhone;
+	}
 
-    public void setSupRemark(String supRemark) {
-        this.supRemark = supRemark;
-    }
+	public void setSupPhone(String supPhone) {
+		this.supPhone = supPhone;
+	}
+
+	public String getSupAddress() {
+		return supAddress;
+	}
+
+	public void setSupAddress(String supAddress) {
+		this.supAddress = supAddress;
+	}
+
+	public String getSupRemark() {
+		return supRemark;
+	}
+
+	public void setSupRemark(String supRemark) {
+		this.supRemark = supRemark;
+	}
 
 	@Override
 	public String toString() {
 		return "Supplier [supId=" + supId + ", supName=" + supName
 				+ ", supLinkman=" + supLinkman + ", supPhone=" + supPhone
 				+ ", supAddress=" + supAddress + ", supRemark=" + supRemark
-				+ "]";
+				+ ", supPay=" + supPay + ", supType=" + supType + "]";
 	}
+	
     
 }

@@ -11,14 +11,15 @@ import cn.itcast.scm.entity.Account;
 import cn.itcast.scm.entity.Page;
 import cn.itcast.scm.entity.Supplier;
 import cn.itcast.scm.service.AccountService;
+import cn.itcast.scm.service.BaseService;
 import cn.itcast.scm.service.SupplierService;
 
 @Service("accountService")
-public class AccountServiceImpl implements AccountService {
+public class AccountServiceImpl extends BaseServiceImpl<Account> implements AccountService{
 	
-	@Autowired
+/*	@Autowired
 	private AccountMapper accountMapper;
-
+*/
 
 
 	public Account login(Account account) {
@@ -28,7 +29,7 @@ public class AccountServiceImpl implements AccountService {
 
 
 
-	public int insert(Account entity) throws Exception {
+	/*public int insert(Account entity) throws Exception {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -68,8 +69,15 @@ public class AccountServiceImpl implements AccountService {
 		return null;
 	}
 
+
+
+	public int deleteList(String[] pks) throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 	
-	
+	*/
 
 	
 

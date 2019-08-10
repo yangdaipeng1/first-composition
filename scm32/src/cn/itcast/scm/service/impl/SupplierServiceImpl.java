@@ -8,25 +8,23 @@ import org.springframework.stereotype.Service;
 import cn.itcast.scm.dao.SupplierMapper;
 import cn.itcast.scm.entity.Page;
 import cn.itcast.scm.entity.Supplier;
+import cn.itcast.scm.service.BaseService;
 import cn.itcast.scm.service.SupplierService;
 
 @Service("supplierService")
-public class SupplierServiceImpl implements SupplierService {
+public class SupplierServiceImpl extends BaseServiceImpl<Supplier> implements SupplierService{
 	
-	@Autowired
+	/*@Autowired
 	private SupplierMapper supplierMapper;
-
+*/
 	
-	public int insert(Supplier entity) throws Exception {
+	/*public int insert(Supplier entity) throws Exception {
 		// TODO Auto-generated method stub
 		return supplierMapper.insert(entity);
 	}
 
 	
-	public int update(Supplier entity) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	
 
 	public int delete(Supplier entity) throws Exception {
 		// TODO Auto-generated method stub
@@ -55,6 +53,20 @@ public class SupplierServiceImpl implements SupplierService {
 	}
 
 
+	public int deleteList(String[] pks) throws Exception {
+		// TODO Auto-generated method stub
+		return supplierMapper.deleteList(pks);
+	}
+
+
+
+
+	public int update(Supplier entity) throws Exception {
+		// TODO Auto-generated method stub
+		return supplierMapper.update(entity);
+	}
+
+*/
 	
 
 	
