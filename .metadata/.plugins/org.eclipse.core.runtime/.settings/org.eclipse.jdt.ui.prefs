@@ -1,4 +1,4 @@
-#Wed Aug 07 20:20:50 CST 2019
+#Wed Aug 28 15:41:39 CST 2019
 content_assist_proposals_foreground=0,0,0
 spelling_locale_initialized=true
 org.eclipse.jdt.ui.text.templates_migrated=true
@@ -17,5 +17,5 @@ content_assist_proposals_background=255,255,255
 content_assist_number_of_computers=17
 useQuickDiffPrefPage=true
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Number"><rhs name\="java.lang.Integer"/></lhs><lhs name\="java.util.Map"><rhs name\="java.util.HashMap"/></lhs></history>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Number"><rhs name\="java.lang.Integer"/></lhs><lhs name\="java.util.Map"><rhs name\="java.util.HashMap"/></lhs><lhs name\="org.codehaus.jackson.Versioned"><rhs name\="org.codehaus.jackson.map.ObjectMapper"/></lhs><lhs name\="org.codehaus.jackson.ObjectCodec"><rhs name\="org.codehaus.jackson.map.ObjectMapper"/></lhs><lhs name\="org.codehaus.jackson.map.ObjectMapper"><rhs name\="org.codehaus.jackson.map.ObjectMapper"/></lhs></history>
 org.eclipse.jdt.ui.text.code_templates_migrated=true

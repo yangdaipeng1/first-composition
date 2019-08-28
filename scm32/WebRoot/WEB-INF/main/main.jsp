@@ -65,7 +65,20 @@
 				</ul>
 			</div>
 			
+			<div title="采购管理">
 
+
+				<!-- list-style: none去左边的点；text-decoration: none：去超链接下划线,title用来区分后继定位这里的超链接 -->
+				<ul style="list-style: none;padding: 0px;margin:0px;">
+					<li style="padding: 6px;"><a href="${proPath}/base/goURL/buyorder/insert.action" title="商品采购"
+						style="text-decoration: none;display: block;font-weight:bold;">商品采购</a>
+					</li>
+					<li style="padding: 6px;"><a href="${proPath}/base/goURL/goods/goodslist.action" title="商品退货"
+						style="text-decoration: none;display: block;font-weight:bold;">商品退货</a>
+					</li>
+				</ul>
+			</div>
+			
 
 			<div title="Title3">content3</div>
 

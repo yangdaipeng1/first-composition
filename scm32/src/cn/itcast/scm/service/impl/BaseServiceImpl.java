@@ -8,13 +8,17 @@ import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import cn.itcast.scm.dao.AccountMapper;
+import cn.itcast.scm.dao.AccountRecordsMapper;
 import cn.itcast.scm.dao.BaseMapper;
+import cn.itcast.scm.dao.BuyOrderDetailMapper;
+import cn.itcast.scm.dao.BuyOrderMapper;
+import cn.itcast.scm.dao.GoodsMapper;
 import cn.itcast.scm.dao.SupplierMapper;
+import cn.itcast.scm.entity.AccountRecords;
 import cn.itcast.scm.entity.Page;
 import cn.itcast.scm.service.BaseService;
 
 public class BaseServiceImpl<T> implements BaseService<T> {
-	
 	protected  BaseMapper<T> baseMapper;
 	
 	@Autowired
@@ -22,6 +26,18 @@ public class BaseServiceImpl<T> implements BaseService<T> {
 	
 	@Autowired
 	protected  AccountMapper accountMapper;
+	
+	@Autowired
+	protected  GoodsMapper goodsMapper;
+	
+	@Autowired
+	protected  BuyOrderMapper buyOrderMapper;
+	
+	@Autowired
+	protected  BuyOrderDetailMapper buyOrderDetailMapper;
+	
+	@Autowired
+	protected  AccountRecordsMapper accountRecordsMapper;
 	
 	@PostConstruct//在构造方法后，初化前执行
 	private void initBaseMapper() throws Exception{

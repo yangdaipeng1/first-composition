@@ -35,8 +35,9 @@
 		<!--配置dao接口生成信息-->
 		<javaClientGenerator type="XMLMAPPER" targetPackage="cn.itcast.scm.dao" targetProject="scm32/src" />
 
-		<table tableName="account" domainObjectName="Account"/>
+		<!-- <table tableName="account" domainObjectName="Account"/>
 			
-		<table tableName="supplier" domainObjectName="Supplier"/>
+		<table tableName="supplier" domainObjectName="Supplier"/> -->
+		<table tableName="goods" domainObjectName="Goods"/>
 	</context>
 </generatorConfiguration>

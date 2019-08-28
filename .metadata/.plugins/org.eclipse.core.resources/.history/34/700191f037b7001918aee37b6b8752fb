@@ -1,5 +1,0 @@
-package cn.itcast.scm.service;
-
-public interface BaseService {
-
-}

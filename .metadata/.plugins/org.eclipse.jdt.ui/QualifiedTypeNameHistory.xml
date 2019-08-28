@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="cn.itcast.scm.dao.SupplierMapper"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
-<fullyQualifiedTypeName name="cn.itcast.scm.dao.BaseMapper"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
 <fullyQualifiedTypeName name="javax.annotation.Resource"/>
@@ -12,7 +11,6 @@
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
-<fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
@@ -26,4 +24,18 @@
 <fullyQualifiedTypeName name="cn.itcast.scm.service.BaseService"/>
 <fullyQualifiedTypeName name="cn.itcast.scm.service.AccountService"/>
 <fullyQualifiedTypeName name="cn.itcast.scm.service.SupplierService"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="cn.itcast.scm.dao.BaseMapper"/>
+<fullyQualifiedTypeName name="cn.itcast.scm.dao.GoodsMapper"/>
+<fullyQualifiedTypeName name="cn.itcast.scm.service.GoodsService"/>
+<fullyQualifiedTypeName name="cn.itcast.scm.entity.Goods"/>
+<fullyQualifiedTypeName name="cn.itcast.scm.entity.BuyOrder"/>
+<fullyQualifiedTypeName name="cn.itcast.scm.service.BuyOrderService"/>
+<fullyQualifiedTypeName name="org.codehaus.jackson.map.ObjectMapper"/>
+<fullyQualifiedTypeName name="cn.itcast.scm.dao.BuyOrderMapper"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="cn.itcast.scm.entity.BuyOrderDetail"/>
+<fullyQualifiedTypeName name="cn.itcast.scm.entity.AccountRecords"/>
+<fullyQualifiedTypeName name="java.util.UUID"/>
 </qualifiedTypeNameHistroy>
