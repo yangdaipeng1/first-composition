@@ -38,10 +38,13 @@ create table sys_param
 (
    sys_param_id         bigint  auto_increment,
    sys_param_field      varchar(50),
-   sys_param_value      varchar(50),
+   sys_param_value      varchar(500),
    sys_param_text       varchar(50),
+   sys_param_type       varchar(2),   
    primary key (sys_param_id)
 );
+insert into sys_param(sys_param_field,sys_param_value,sys_param_type) values('shId','select s.sh_id as sys_param_value,s.sh_name as sys_param_text from store_house s','1');
+
 
 insert into sys_param(sys_param_field,sys_param_value,sys_param_text) values('supType','1','一级供应商');
 insert into sys_param(sys_param_field,sys_param_value,sys_param_text) values('supType','2','二级供应商');
@@ -50,6 +53,8 @@ insert into sys_param(sys_param_field,sys_param_value,sys_param_text) values('go
 insert into sys_param(sys_param_field,sys_param_value,sys_param_text) values('goodsColor','2','绿色');
 insert into sys_param(sys_param_field,sys_param_value,sys_param_text) values('goodsColor','3','蓝色');
 select * from sys_param;
+
+
 /*==============================================================*/
 /* Table: goods                                                 */
 /*==============================================================*/
@@ -141,7 +146,7 @@ create table supplier
 /* 添加帐户数据, */
 insert into account (acc_login,acc_pass) values ('admin','admin');
 insert into account (acc_login,acc_pass) values ('admin2','admin2');
-insert into account (acc_login,acc_pass) values ('admin3','admin3'),('admin4','admin4')
+
 /* 添加供应商数据, */
 insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (1,'苹果供应商','小张','12388888887','广州花都','普通供应商',0,1);
 insert into supplier (sup_id,sup_name,sup_linkman,sup_phone,sup_address,sup_remark,sup_pay,sup_type) values (2,'三星供应商','小王','12388888888','广州增城','普通供应商',0,1);
@@ -343,3 +348,5 @@ select * from buy_order_detail;
 select * from return_order;
 select * from return_order_detail;
 
+select * from sys_param;
+select s.sh_id as sys_param_value,s.sh_name as sys_param_text from store_house s

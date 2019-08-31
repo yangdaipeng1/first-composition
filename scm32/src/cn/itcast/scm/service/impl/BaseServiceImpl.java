@@ -14,6 +14,7 @@ import cn.itcast.scm.dao.BuyOrderDetailMapper;
 import cn.itcast.scm.dao.BuyOrderMapper;
 import cn.itcast.scm.dao.GoodsMapper;
 import cn.itcast.scm.dao.SupplierMapper;
+import cn.itcast.scm.dao.SysParamMapper;
 import cn.itcast.scm.entity.AccountRecords;
 import cn.itcast.scm.entity.Page;
 import cn.itcast.scm.service.BaseService;
@@ -39,6 +40,8 @@ public class BaseServiceImpl<T> implements BaseService<T> {
 	@Autowired
 	protected  AccountRecordsMapper accountRecordsMapper;
 	
+	@Autowired
+	protected SysParamMapper sysParamMapper;
 	@PostConstruct//在构造方法后，初化前执行
 	private void initBaseMapper() throws Exception{
 		//完成以下逻辑，需要对研发本身进行命名与使用规范

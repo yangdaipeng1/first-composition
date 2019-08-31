@@ -165,7 +165,13 @@
 			}, {
 				field : 'supType',
 				title : '供应商类型',
-				width : 100
+				width : 100,
+				formatter: function(value,row,index){
+					var str = "${applicationScope.sysParam.supType}";
+					
+					return valueToText(str,value);
+				}
+
 			}, {
 				field : 'supAddress',
 				title : '供应商地址',
