@@ -24,11 +24,10 @@ public class SysParamAction extends BaseAction {
 	private SysParamService sysParamService;
 
 	
-	 @RequestMapping(value="/insert")
-	 @ResponseBody //如果返回json格式，需要这个注解，这里用来测试环境	 
+	@RequestMapping(value="/insert")
+	@ResponseBody //如果返回json格式，需要这个注解，这里用来测试环境	 
 	public Object insert(SysParam sysParam){
 		 //添加到数据库的系统参数表
-		 
 		 reloadSysParam();
 		
 		 return null;

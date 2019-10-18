@@ -4,11 +4,11 @@
   "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-<!--
+	<!--
 	<properties resource="conn.properties" />
 	  -->
 	  
-	 <classPathEntry location="D:\developer-jar\mysql-connect\mysql-connector-java-5.1.26-bin.jar"/>
+	<classPathEntry location="D:\developer-jar\mysql-connect\mysql-connector-java-5.1.26-bin.jar"/>
 	<!-- 指定运行环境是mybatis3的版本 -->
 	<context id="testTables" targetRuntime="MyBatis3">
 
@@ -26,8 +26,8 @@
         <!-- targetPackage指定模型在生成在哪个包 ,targetProject指定项目的src,-->        
 		<javaModelGenerator targetPackage="cn.itcast.scm.entity"
 			targetProject="scm32/src">
-			<!-- 去除字段前后空格 -->
-			<property name="trimStrings" value="false" />
+		<!-- 去除字段前后空格 -->
+		<property name="trimStrings" value="false" />
 		</javaModelGenerator>
 		<!-- 配置SQL映射文件生成信息 -->
 		<sqlMapGenerator targetPackage="cn.itcast.scm.dao"

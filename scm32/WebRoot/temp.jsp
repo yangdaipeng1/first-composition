@@ -3,12 +3,8 @@
 <%@include file="common/common.jspf" %>
 <html>
 <head> 
+    
     <title> </title>
-
-
-
-
-
 
 </head> 
 

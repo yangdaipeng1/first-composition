@@ -5,20 +5,6 @@ import java.math.BigDecimal;
 
 public class Goods implements Serializable{
 	
-    @Override
-	public String toString() {
-		return "Goods [goodsId=" + goodsId + ", goodsName=" + goodsName
-				+ ", goodsUnit=" + goodsUnit + ", goodsType=" + goodsType
-				+ ", goodsColor=" + goodsColor + ", goodsStore=" + goodsStore
-				+ ", goodsLimit=" + goodsLimit + ", goodsCommission="
-				+ goodsCommission + ", goodsProducer=" + goodsProducer
-				+ ", goodsRemark=" + goodsRemark + ", goodsSelPrice="
-				+ goodsSelPrice + ", goodsBuyPrice=" + goodsBuyPrice + "]";
-	}
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 7686010924263973740L;
 
 	private String goodsId;
@@ -140,4 +126,16 @@ public class Goods implements Serializable{
     public void setGoodsBuyPrice(BigDecimal goodsBuyPrice) {
         this.goodsBuyPrice = goodsBuyPrice;
     }
+    
+    @Override
+	public String toString() {
+		return "Goods [goodsId=" + goodsId + ", goodsName=" + goodsName
+				+ ", goodsUnit=" + goodsUnit + ", goodsType=" + goodsType
+				+ ", goodsColor=" + goodsColor + ", goodsStore=" + goodsStore
+				+ ", goodsLimit=" + goodsLimit + ", goodsCommission="
+				+ goodsCommission + ", goodsProducer=" + goodsProducer
+				+ ", goodsRemark=" + goodsRemark + ", goodsSelPrice="
+				+ goodsSelPrice + ", goodsBuyPrice=" + goodsBuyPrice + "]";
+	}
+
 }

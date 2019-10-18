@@ -4,13 +4,13 @@
 <html>
 <head>
 
+	<title></title>
 
-<title></title>
-<style type="text/css">
-.searchbox {
-	margin: -3
-}
-</style>
+	<style type="text/css">
+	.searchbox {
+		margin: -3
+	}
+	</style>
 
 <script type="text/javascript">
 	$(function() {
@@ -37,20 +37,20 @@
 
 			toolbar : [
 					{
-						iconCls : 'icon-add',
-						text : '选择商品',
-						handler : function() {
-							alert('选择商品');
-							parent
-									.$('#win')
-									.window(
-											{
-												title : '选择需要采购商品',
-												width : 600,
-												height : 400,
-												modal : true,
-												content : "<iframe src='${proPath}/base/goURL/goods/select.action' height='100%' width='100%' frameborder='0px' ></iframe>"
-											});
+					iconCls : 'icon-add',
+					text : '选择商品',
+					handler : function() {
+						alert('选择商品');
+						parent
+							.$('#win')
+							.window(
+								{
+									title : '选择需要采购商品',
+									width : 600,
+									height : 400,
+									modal : true,
+									content : "<iframe src='${proPath}/base/goURL/goods/select.action' height='100%' width='100%' frameborder='0px' ></iframe>"
+								});
 						}
 
 					},
@@ -110,23 +110,22 @@
 
 							//提交采购到服务端
 							$('#ff')
-									.form(
-											'submit',
-											{
-												url : '${proPath}/buyOrder/insert.action',
-												onSubmit : function(
-														param) {
-													param.rows = rows;
-													return true;
-
-												},
-												success : function(
-														data) {
-													//自己处理返回的信息  
-													alert(data);
-												}
-											});
-
+							.form(
+								'submit',
+								{
+									url : '${proPath}/buyOrder/insert.action',
+									onSubmit : function(
+											param) {
+										param.rows = rows;
+										return true;
+	
+									},
+									success : function(
+											data) {
+										//自己处理返回的信息  
+										alert(data);
+									}
+								});
 						}
 
 					} ],
@@ -183,23 +182,23 @@
 					onDblClickCell: function(index,field,value){
 						//alert("dblclick");
 						//结束编辑行, 可以不用，不会被调用，将在单击事件处理
-							if(editIndex != undefined){							
-								//alert(" onDblClickCell editIndex != undefined");			
-							  $(this).datagrid('endEdit', editIndex);
-								editIndex = undefined;
-							}
-							//alert("dbclick");		
-							//设置可编辑行	
-							$(this).datagrid('beginEdit', index);
-							editIndex = index;
-							//alert("dbclick");				
-							var ed = $(this).datagrid('getEditor', {index:index,field:field});
-							//alert("field||index:"+field+index);				
-							$(ed.target).focus();
+						if(editIndex != undefined){							
+							//alert(" onDblClickCell editIndex != undefined");			
+						  $(this).datagrid('endEdit', editIndex);
+							editIndex = undefined;
+						}
+						//alert("dbclick");		
+						//设置可编辑行	
+						$(this).datagrid('beginEdit', index);
+						editIndex = index;
+						//alert("dbclick");				
+						var ed = $(this).datagrid('getEditor', {index:index,field:field});
+						//alert("field||index:"+field+index);				
+						$(ed.target).focus();
 						
 					},
 					onClickCell: function(index,field,value){
-						if(editIndex!= undefined){					
+						  if(editIndex!= undefined){					
 							
 						  //计算总价
 						  var amount = $(this).datagrid('getEditor', {index:editIndex,field:"bodAmount"});
@@ -216,8 +215,6 @@
 							editIndex = undefined;
 						}				
 					}
-
-					
 				});
 
 			$('#supName').searchbox(
@@ -225,16 +222,15 @@
 					searcher : function(value, name) {
 						//alert(value + "," + name);
 						parent
-								.$('#win')
-								.window(
-										{
-											title : '选择供应商',
-											width : 800,
-											height : 600,
-											modal : true,
-											content : "<iframe src='${proPath}/base/goURL/supplier/select.action' height='100%' width='100%' frameborder='0px' ></iframe>"
-										});
-
+						.$('#win')
+						.window(
+							{
+								title : '选择供应商',
+								width : 800,
+								height : 600,
+								modal : true,
+								content : "<iframe src='${proPath}/base/goURL/supplier/select.action' height='100%' width='100%' frameborder='0px' ></iframe>"
+							});
 					},
 					prompt : '请选择供应商'
 				});

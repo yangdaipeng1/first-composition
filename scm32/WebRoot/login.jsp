@@ -49,6 +49,8 @@
 			title : '登陆入口',
 			width : 250,
 			height : 150,
+			left : 800,
+			top : 350,
 			closed : false,
 			cache : false,
 			//设置关闭按钮可见

@@ -2,7 +2,7 @@
 <cache:CacheIndex xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cache="http://eclipse.org/dltk/cache_model" environment="org.eclipse.dltk.core.environment.localEnvironment">
   <entries path="D:/workspace_eclipse/scm/scm32/WebRoot/jquery-easyui-1.3.5/easyloader.js" timestamp="1564972695826" lastAccessTime="1564972697866"/>
   <entries path="D:/workspace_eclipse/scm/scm32/WebRoot/jquery-easyui-1.3.5/jquery.easyui.min.js" timestamp="1564972695836" lastAccessTime="1564972698046"/>
-  <entries path="D:/workspace_eclipse/scm/scm32/WebRoot/jquery-easyui-1.3.5/jquery.min.js" timestamp="1564972695836" lastAccessTime="1567047322445"/>
+  <entries path="D:/workspace_eclipse/scm/scm32/WebRoot/jquery-easyui-1.3.5/jquery.min.js" timestamp="1564972695836" lastAccessTime="1570515266601"/>
   <entries path="D:/workspace_eclipse/scm/scm32/WebRoot/jquery-easyui-1.3.5/locale/easyui-lang-zh_CN.js" timestamp="1564972695836" lastAccessTime="1564972698536"/>
   <entries path="D:/workspace_eclipse/scm/scm32/WebRoot/jquery-easyui-1.3.5/plugins/jquery.accordion.js" timestamp="1564972695836" lastAccessTime="1564972702736"/>
   <entries path="D:/workspace_eclipse/scm/scm32/WebRoot/jquery-easyui-1.3.5/plugins/jquery.calendar.js" timestamp="1564972695836" lastAccessTime="1564972702836"/>
@@ -59,4 +59,6 @@
   <entries path="D:/workspace_eclipse/scm/scm32/WebRoot/jquery-easyui-1.3.5/src/jquery.tabs.js" timestamp="1564972695886" lastAccessTime="1564972710396"/>
   <entries path="D:/workspace_eclipse/scm/scm32/WebRoot/jquery-easyui-1.3.5/src/jquery.window.js" timestamp="1564972695886" lastAccessTime="1564972710516"/>
   <entries path="D:/workspace_eclipse/scm/scm32/WebRoot/js/common.js" timestamp="1567172107273" lastAccessTime="1567172107993"/>
+  <entries path="D:/workspace_eclipse/scm/scm32/WebRoot/js/jscharts.js" timestamp="1570515279504" lastAccessTime="1570515281633"/>
+  <entries path="D:/workspace_eclipse/scm/scm32/WebRoot/jscharts&#x591a;&#x67f1;&#x5f62;.js" timestamp="1570516140564" lastAccessTime="1570516142673"/>
 </cache:CacheIndex>

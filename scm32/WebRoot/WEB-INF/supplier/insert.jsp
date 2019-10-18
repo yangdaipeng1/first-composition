@@ -7,7 +7,7 @@
 <body>
 
 	<form id="ff" method="post">
-	   <div>
+	    <div>
 			<label for="supId">供应商编号:</label> <input type="text" name="supId" />
 		</div>
 		<div>
@@ -25,11 +25,11 @@
 			<label for="supAddress">联系地址:</label> <input type="text"
 				name="supAddress" />
 		</div>
-				<div>
+		<div>
 			<label for="supPay">期初应付(元):</label> <input type="text"
 				name="supPay" />
 		</div>
-				<div>
+		<div>
 			<label for="supType">供应商类型：</label> 									
 				<select id="cc" class="easyui-combobox" name="supType" style="width:200px;">   
 					<c:forEach items="${applicationScope.sysParam.supType}" var="supType">

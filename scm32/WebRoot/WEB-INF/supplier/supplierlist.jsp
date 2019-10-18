@@ -117,21 +117,9 @@
 
 							}
 						});
-
-							
-							
-							
-							
-							
-							
-							
-							
-							
 						}else{
 							alert("请选择需要删除的记录！");
-						}
-						
-						
+						}	
 					}
 				},'-',{
 					text:"名称：<input type='text' id='supName' name='supName'/>",					
@@ -196,7 +184,7 @@
 			prompt:'' 
 		});
 		
-	/* 通过关键字查询
+		/* 通过关键字查询
 		$('#ss').searchbox({ 
 			searcher:function(value,name){ 
 				alert(value + "," + name); 
@@ -215,4 +203,5 @@
 
 	<table id="dg"></table>
 </body>
+
 </html>

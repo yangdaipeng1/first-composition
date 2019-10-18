@@ -5,16 +5,6 @@ import java.math.BigDecimal;
 
 public class BuyOrderDetail implements Serializable {
 
-	@Override
-	public String toString() {
-		return "BuyOrderDetail [bodId=" + bodId + ", goodsId=" + goodsId
-				+ ", goodsName=" + goodsName + ", goodsUnit=" + goodsUnit
-				+ ", goodsType=" + goodsType + ", goodsColor=" + goodsColor
-				+ ", bodAmount=" + bodAmount + ", bodBuyPrice=" + bodBuyPrice
-				+ ", bodTotalPrice=" + bodTotalPrice + ", boId=" + boId
-				+ ", bodImeiList=" + bodImeiList + "]";
-	}
-
 	private static final long serialVersionUID = -4001513144832388483L;
 
 	private String bodId;
@@ -126,4 +116,13 @@ public class BuyOrderDetail implements Serializable {
     public void setBodImeiList(String bodImeiList) {
         this.bodImeiList = bodImeiList;
     }
+    @Override
+	public String toString() {
+		return "BuyOrderDetail [bodId=" + bodId + ", goodsId=" + goodsId
+				+ ", goodsName=" + goodsName + ", goodsUnit=" + goodsUnit
+				+ ", goodsType=" + goodsType + ", goodsColor=" + goodsColor
+				+ ", bodAmount=" + bodAmount + ", bodBuyPrice=" + bodBuyPrice
+				+ ", bodTotalPrice=" + bodTotalPrice + ", boId=" + boId
+				+ ", bodImeiList=" + bodImeiList + "]";
+	}
 }

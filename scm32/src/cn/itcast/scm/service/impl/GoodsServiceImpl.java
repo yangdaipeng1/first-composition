@@ -17,16 +17,14 @@ import cn.itcast.scm.service.SupplierService;
 public class GoodsServiceImpl extends BaseServiceImpl<Goods> implements GoodsService{
 	
 	/*@Autowired
-	private SupplierMapper supplierMapper;
-*/
+		private SupplierMapper supplierMapper;
+	*/
 	
-	/*public int insert(Supplier entity) throws Exception {
+	/*
+	public int insert(Supplier entity) throws Exception {
 		// TODO Auto-generated method stub
 		return supplierMapper.insert(entity);
 	}
-
-	
-	
 
 	public int delete(Supplier entity) throws Exception {
 		// TODO Auto-generated method stub
@@ -60,9 +58,6 @@ public class GoodsServiceImpl extends BaseServiceImpl<Goods> implements GoodsSer
 		return supplierMapper.deleteList(pks);
 	}
 
-
-
-
 	public int update(Supplier entity) throws Exception {
 		// TODO Auto-generated method stub
 		return supplierMapper.update(entity);
@@ -70,11 +65,4 @@ public class GoodsServiceImpl extends BaseServiceImpl<Goods> implements GoodsSer
 
 */
 	
-
-	
-
-	
-
-
-
 }

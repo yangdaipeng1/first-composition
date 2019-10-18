@@ -4,9 +4,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 public class Supplier implements Serializable{
-    /**
-	 * 
-	 */
+    
 	private static final long serialVersionUID = -7585543142522940502L;
 
 	private Integer supId;

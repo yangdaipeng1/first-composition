@@ -3,18 +3,8 @@ package cn.itcast.scm.entity;
 import java.io.Serializable;
 
 public class SysParam implements Serializable {
-    /**
-	 * 
-	 */
+    
 	private static final long serialVersionUID = -2768672857058941094L;
-
-	@Override
-	public String toString() {
-		return "SysParam [sysParamId=" + sysParamId + ", sysParamField="
-				+ sysParamField + ", sysParamValue=" + sysParamValue
-				+ ", sysParamText=" + sysParamText + ", sysParamType="
-				+ sysParamType + "]";
-	}
 
 	private Long sysParamId;
 
@@ -65,4 +55,13 @@ public class SysParam implements Serializable {
     public void setSysParamType(String sysParamType) {
         this.sysParamType = sysParamType;
     }
+    
+    @Override
+	public String toString() {
+		return "SysParam [sysParamId=" + sysParamId + ", sysParamField="
+				+ sysParamField + ", sysParamValue=" + sysParamValue
+				+ ", sysParamText=" + sysParamText + ", sysParamType="
+				+ sysParamType + "]";
+	}
+
 }

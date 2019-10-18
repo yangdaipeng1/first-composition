@@ -17,17 +17,14 @@ import cn.itcast.scm.service.SupplierService;
 @Service("accountService")
 public class AccountServiceImpl extends BaseServiceImpl<Account> implements AccountService{
 	
-/*	@Autowired
-	private AccountMapper accountMapper;
-*/
-
+	/*	@Autowired
+		private AccountMapper accountMapper;
+	*/
 
 	public Account login(Account account) {
 		// TODO Auto-generated method stub
 		return accountMapper.login(account);
 	}
-
-
 
 	/*public int insert(Account entity) throws Exception {
 		// TODO Auto-generated method stub
@@ -78,13 +75,5 @@ public class AccountServiceImpl extends BaseServiceImpl<Account> implements Acco
 
 	
 	*/
-
-	
-
-	
-
-	
-
-
 
 }

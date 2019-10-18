@@ -38,7 +38,7 @@
 	<!-- 配置事务通知 -->
 	<tx:advice id="advice" transaction-manager="transactionManager">
 		<tx:attributes>
-<!-- 默认只处理运行时异常，可加rollback-for="Exception/Throwable"等处理所有异常或包括错误 -->
+	<!-- 默认只处理运行时异常，可加rollback-for="Exception/Throwable"等处理所有异常或包括错误 -->
 			<tx:method name="insert*" propagation="REQUIRED" rollback-for="Exception"/>
 			<tx:method name="update*" propagation="REQUIRED" rollback-for="Exception"/>
 			<tx:method name="delete*" propagation="REQUIRED" rollback-for="Exception"/>
@@ -54,15 +54,15 @@
 		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"/>		
 	</bean>
 	
-<!-- 	<context:component-scan base-package="*"/> -->
+	<!-- 	<context:component-scan base-package="*"/> -->
 	
 	
-<!-- 自动扫描组件，要把controller去除，他们是在spring-mvc.xml中配置，如果不去除会影响事务管理。   --> 
+	<!-- 自动扫描组件，要把controller去除，他们是在spring-mvc.xml中配置，如果不去除会影响事务管理。   --> 
 		<context:component-scan base-package="cn.itcast">
-		<context:exclude-filter type="annotation"			expression="org.springframework.stereotype.Controller" />
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>	
 	
-		<!-- 配置 转换器，对于在basePackage设置的包（包括子包）下的接口类，如果接口的全类名在Mapper.xml文件中定义过（一致），
+	<!-- 配置 转换器，对于在basePackage设置的包（包括子包）下的接口类，如果接口的全类名在Mapper.xml文件中定义过（一致），
 	将被转换成spring的BEAN，在调用 的地方通过@Autowired方式将可以注入接口实例-->
 	
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">

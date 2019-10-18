@@ -9,6 +9,8 @@
   </resultMap>
   <!-- 用户登录 -->
   <select id="login" parameterType="Account" resultMap="accountResultMap">
-  select * from account where acc_login =#{accLogin} and acc_pass =#{accPass}
+  
+  	select * from account where acc_login =#{accLogin} and acc_pass =#{accPass}
+  
   </select>
 </mapper>

@@ -7,9 +7,6 @@ import java.util.Map;
 
 public class Page<T> implements Serializable{
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 337297181251071639L;
 	
 	private Integer page;//当前页
@@ -68,6 +65,7 @@ public class Page<T> implements Serializable{
 
 	public void setTotalRecord(Integer totalRecord) {
 		pageMap.put("total", totalRecord);
+		
 		this.totalRecord = totalRecord;
 	}
 
@@ -77,6 +75,7 @@ public class Page<T> implements Serializable{
 
 	public void setList(List<T> list) {
 		pageMap.put("rows", list);
+		
 		this.list = list;
 	}
 
@@ -90,6 +89,7 @@ public class Page<T> implements Serializable{
 
 	public Integer getStart() {
 		this.start = (page-1)*rows;
+		
 		return start;
 	}
 
@@ -103,10 +103,5 @@ public class Page<T> implements Serializable{
 				+ totalRecord + ", list=" + list + ", keyWord=" + keyWord
 				+ ", paramEntity=" + paramEntity + ", start=" + start + "]";
 	}
-
-	
-	
-	
-	
 
 }

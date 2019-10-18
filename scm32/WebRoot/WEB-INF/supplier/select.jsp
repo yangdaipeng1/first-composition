@@ -3,14 +3,12 @@
 <%@include file="/common/common.jspf"%>
 <html>
 <head>
-
-
-<title></title>
-<style type="text/css">
-.searchbox{
-	margin:-3
-}
-</style>
+	<title></title>
+	<style type="text/css">
+	.searchbox{
+		margin:-3
+	}
+	</style>
 
 <script type="text/javascript">
 	$(function(){
@@ -124,8 +122,7 @@
 				});					
 			}, 
 			prompt:'请输入供应商名称' 
-		}); */ 
-
+	}); */ 
 	});
 </script>
 </head>

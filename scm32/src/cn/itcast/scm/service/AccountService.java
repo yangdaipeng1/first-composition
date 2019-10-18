@@ -3,7 +3,8 @@ package cn.itcast.scm.service;
 import cn.itcast.scm.entity.Account;
 import cn.itcast.scm.entity.Supplier;
 
-public interface AccountService extends BaseService<Account>{
+public interface AccountService extends BaseService<Account> {
 
 	public Account login(Account account);
+
 }

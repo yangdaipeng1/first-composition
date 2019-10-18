@@ -6,16 +6,7 @@ import java.util.Date;
 
 public class AccountRecords implements Serializable {
 
-	@Override
-	public String toString() {
-		return "AccountRecords [arId=" + arId + ", supId=" + supId
-				+ ", arDate=" + arDate + ", arOrderId=" + arOrderId
-				+ ", arBusType=" + arBusType + ", arPayable=" + arPayable
-				+ ", arPaid=" + arPaid + ", arArrears=" + arArrears
-				+ ", arDiscount=" + arDiscount + ", arAttn=" + arAttn
-				+ ", arOperator=" + arOperator + ", arRemark=" + arRemark + "]";
-	}
-
+	
 	private static final long serialVersionUID = -3291957435350799337L;
 
 	private String arId;
@@ -137,4 +128,15 @@ public class AccountRecords implements Serializable {
     public void setArRemark(String arRemark) {
         this.arRemark = arRemark;
     }
+    
+    @Override
+	public String toString() {
+		return "AccountRecords [arId=" + arId + ", supId=" + supId
+				+ ", arDate=" + arDate + ", arOrderId=" + arOrderId
+				+ ", arBusType=" + arBusType + ", arPayable=" + arPayable
+				+ ", arPaid=" + arPaid + ", arArrears=" + arArrears
+				+ ", arDiscount=" + arDiscount + ", arAttn=" + arAttn
+				+ ", arOperator=" + arOperator + ", arRemark=" + arRemark + "]";
+	}
+
 }

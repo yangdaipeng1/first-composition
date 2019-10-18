@@ -41,18 +41,6 @@ public class BuyOrder implements Serializable {
     
     public List<BuyOrderDetail> buyOrderDetails;
 
-
-
-	@Override
-	public String toString() {
-		return "BuyOrder [boId=" + boId + ", supId=" + supId + ", shId=" + shId
-				+ ", boDate=" + boDate + ", boPayable=" + boPayable
-				+ ", boPaid=" + boPaid + ", boArrears=" + boArrears
-				+ ", boOriginal=" + boOriginal + ", boRemark=" + boRemark
-				+ ", boAttn=" + boAttn + ", boOperator=" + boOperator
-				+ ", buyOrderDetails=" + buyOrderDetails + "]";
-	}
-
 	public String getBoId() {
         return boId;
     }
@@ -140,4 +128,14 @@ public class BuyOrder implements Serializable {
     public void setBoOperator(Integer boOperator) {
         this.boOperator = boOperator;
     }
+
+	@Override
+	public String toString() {
+		return "BuyOrder [boId=" + boId + ", supId=" + supId + ", shId=" + shId
+				+ ", boDate=" + boDate + ", boPayable=" + boPayable
+				+ ", boPaid=" + boPaid + ", boArrears=" + boArrears
+				+ ", boOriginal=" + boOriginal + ", boRemark=" + boRemark
+				+ ", boAttn=" + boAttn + ", boOperator=" + boOperator
+				+ ", buyOrderDetails=" + buyOrderDetails + "]";
+	}
 }

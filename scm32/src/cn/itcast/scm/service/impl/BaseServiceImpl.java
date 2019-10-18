@@ -71,7 +71,6 @@ public class BaseServiceImpl<T> implements BaseService<T> {
 
 	}	
 	
-
 	public int insert(T entity) throws Exception {
 		// TODO Auto-generated method stub
 		return baseMapper.insert(entity);

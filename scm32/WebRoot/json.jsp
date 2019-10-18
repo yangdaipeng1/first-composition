@@ -18,6 +18,7 @@
   		$(function(){
 	  			$("#bt1").click(
 	  				function(){
+	  					//jquery实现ajax技术。
 		  				$.post(
 		  					"supplier/doAjax.action",
 		  					{supId:1001,supName:"name1001"},
